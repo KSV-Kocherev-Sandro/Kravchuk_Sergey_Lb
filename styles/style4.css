@@ -1,0 +1,38 @@
+body {
+    background: url(photo4/bg_page.png) center repeat-y;
+    background-color: #fef8ac;
+    width: 750px;
+    margin: 0 auto;
+}
+
+#banner img {
+    height: 500px;
+}
+
+h1, h2, h3 {
+    border-top: 2px solid #98a143;
+    color: #bd832a;
+    padding-left: 50px;
+}
+
+p {
+    margin: 17px 50px;
+}
+
+    p:nth-of-type(1) {
+        color: #e1901f;
+        font-size: 18px;
+        margin: 15px 50px;
+    }
+
+.advice {
+    background-color: #fbf8ab;
+    padding: 25px;
+    margin: 25px 50px;
+    text-align: left;
+    border: 2px dashed #c48a2c;
+}
+
+    .advice strong {
+        color: red;
+    }

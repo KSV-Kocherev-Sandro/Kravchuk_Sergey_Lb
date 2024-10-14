@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #003747;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 80%;
+}
+
+.left-panel{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding-left: 260px;
+}
+
+    .center {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gif-button {
+    cursor: pointer;
+}
+
+    .gif-button img {
+        max-width: 100px;
+        height: auto;
+    }
+
+.main-photo {
+    width: 1000px;
+    height: 955px;
+    object-fit: cover;
+}
+
+.helper-icon {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+    .helper-icon img {
+        width: 50px;
+    }
+
+    .helper-icon:hover::after {
+        content: attr(title);
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 5px;
+        white-space: nowrap;
+        z-index: 10;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        opacity: 1;
+        transition: opacity 0.2s;
+    }
+
+    .helper-icon::after {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s;
+    }
+
+    .helper-icon:hover::after {
+        opacity: 1;
+        visibility: visible;
+    }
